@@ -1,0 +1,3 @@
+def admit(key, residents, recent):
+    """Admit new tiles freely until full, then require a recent request."""
+    return len(residents) < 16 or key in recent

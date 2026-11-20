@@ -1,0 +1,18 @@
+{
+  "model": "gpt-6.1-sol",
+  "backend": "Codex CLI",
+  "effort": "low",
+  "seconds": 12.11,
+  "status": "ok",
+  "usage": [
+    {
+      "input_tokens": 15882,
+      "cached_input_tokens": 14208,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 199,
+      "reasoning_output_tokens": 156
+    }
+  ],
+  "cost": null,
+  "prompt_file": "prompt.txt"
+}

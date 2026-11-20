@@ -1,2 +1,2 @@
 def admit(key, residents, recent):
-    return True
+    return len(residents) < 16 or key in recent

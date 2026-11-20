@@ -1,0 +1,12 @@
+A map kiosk repeatedly pans over a small area while visitors occasionally fly across hundreds of one-use tiles. The byte-identical tile loader already caches 16 entries with LRU. Implement admit(key, residents, recent). On a MISS return a bool indicating whether to admit the loaded tile. residents lists cached keys from least to most recently used. recent contains the last 32 REQUEST keys including hits, excluding the current request. There is no other persistent state. Admission at capacity evicts LRU. The cache controller alone serves values. Reduce aggregate cold tile fetches by at least 25% vs always-admit LRU on scan-and-return traces. On control traces (steady viewport and streaming unique tiles) keep aggregate fetches within 5% of LRU. Valid for hashable tile keys, no future access. Example pattern: revisit four home tiles repeatedly, scan 32 single-use tiles, revisit home.
+
+Starting implementation
+def admit(key, residents, recent):
+    return True
+
+Saved planning note
+- **Constraint:** Use only the current key, LRU-ordered residents, and 32 prior requests; support arbitrary hashable keys without serving values or using future accesses.
+- **Hypothesis:** Admit while space remains. At capacity, admit only if the missed key appears in recent history. This lets repeated tiles enter while preventing one-use scans from evicting an established viewport.
+- **Edge case:** A new viewport revisited more than 32 requests apart may never qualify for admission at capacity. Also test partially filled caches and keys with unusual equality behavior.
+- **Stopping check:** Replay identical traces against always-admit LRU, counting every miss, including rejected admissions. Accept only if aggregate fetches fall at least 25% on scan-and-return traces and stay within 5% of LRU on both steady-viewport and unique-stream controls.
+Return only a complete Python module implementing this function. Use standard library only. No tools, external files, persistent state or prose. The evaluator will import the module.
