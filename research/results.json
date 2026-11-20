@@ -1,0 +1,234 @@
+{
+  "frozen_commit": "1c7ebd31443972723eb53b75196990cfa7dc7494",
+  "start": "c5762311dac822fa6bdb6a45dc0465250cf954a6",
+  "python": "3.11.15",
+  "selected": "01-assisted",
+  "baseline": {
+    "controls": 6651,
+    "fetches": 7384,
+    "lru_controls": 6651,
+    "lru_fetches": 7384,
+    "passed": false,
+    "traces": 32
+  },
+  "result": {
+    "controls": 6651,
+    "fetches": 5627,
+    "lru_controls": 6651,
+    "lru_fetches": 7384,
+    "passed": false,
+    "traces": 32
+  },
+  "trials": [
+    {
+      "run": "01-assisted",
+      "development": {
+        "controls": 1673,
+        "fetches": 1426,
+        "lru_controls": 1673,
+        "lru_fetches": 1937,
+        "passed": true,
+        "traces": 8
+      },
+      "model": "gpt-6.1-sol",
+      "backend": "Codex CLI",
+      "effort": "low",
+      "seconds": 8.3,
+      "status": "ok",
+      "usage": [
+        {
+          "input_tokens": 16060,
+          "cached_input_tokens": 4736,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 115,
+          "reasoning_output_tokens": 88
+        }
+      ],
+      "cost": null,
+      "prompt_file": "prompt.txt",
+      "final": {
+        "controls": 6651,
+        "fetches": 5627,
+        "lru_controls": 6651,
+        "lru_fetches": 7384,
+        "passed": false,
+        "traces": 32
+      }
+    },
+    {
+      "run": "01-plain",
+      "development": {
+        "controls": 1673,
+        "fetches": 1426,
+        "lru_controls": 1673,
+        "lru_fetches": 1937,
+        "passed": true,
+        "traces": 8
+      },
+      "model": "gpt-6.1-sol",
+      "backend": "Codex CLI",
+      "effort": "low",
+      "seconds": 12.11,
+      "status": "ok",
+      "usage": [
+        {
+          "input_tokens": 15882,
+          "cached_input_tokens": 14208,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 199,
+          "reasoning_output_tokens": 156
+        }
+      ],
+      "cost": null,
+      "prompt_file": "prompt.txt",
+      "final": {
+        "controls": 6651,
+        "fetches": 5627,
+        "lru_controls": 6651,
+        "lru_fetches": 7384,
+        "passed": false,
+        "traces": 32
+      }
+    },
+    {
+      "run": "02-assisted",
+      "development": {
+        "controls": 1673,
+        "fetches": 1426,
+        "lru_controls": 1673,
+        "lru_fetches": 1937,
+        "passed": true,
+        "traces": 8
+      },
+      "model": "gpt-6.1-sol",
+      "backend": "Codex CLI",
+      "effort": "low",
+      "seconds": 8.78,
+      "status": "ok",
+      "usage": [
+        {
+          "input_tokens": 13880,
+          "cached_input_tokens": 3712,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 122,
+          "reasoning_output_tokens": 94
+        }
+      ],
+      "cost": null,
+      "prompt_file": "prompt.txt",
+      "final": {
+        "controls": 6651,
+        "fetches": 5627,
+        "lru_controls": 6651,
+        "lru_fetches": 7384,
+        "passed": false,
+        "traces": 32
+      }
+    },
+    {
+      "run": "02-plain",
+      "development": {
+        "controls": 1673,
+        "fetches": 1426,
+        "lru_controls": 1673,
+        "lru_fetches": 1937,
+        "passed": true,
+        "traces": 8
+      },
+      "model": "gpt-6.1-sol",
+      "backend": "Codex CLI",
+      "effort": "low",
+      "seconds": 24.87,
+      "status": "ok",
+      "usage": [
+        {
+          "input_tokens": 13706,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 514,
+          "reasoning_output_tokens": 457
+        }
+      ],
+      "cost": null,
+      "prompt_file": "prompt.txt",
+      "final": {
+        "controls": 6651,
+        "fetches": 5627,
+        "lru_controls": 6651,
+        "lru_fetches": 7384,
+        "passed": false,
+        "traces": 32
+      }
+    },
+    {
+      "run": "03-assisted",
+      "development": {
+        "controls": 1673,
+        "fetches": 1426,
+        "lru_controls": 1673,
+        "lru_fetches": 1937,
+        "passed": true,
+        "traces": 8
+      },
+      "model": "gpt-6.1-sol",
+      "backend": "Codex CLI",
+      "effort": "low",
+      "seconds": 5.78,
+      "status": "ok",
+      "usage": [
+        {
+          "input_tokens": 16060,
+          "cached_input_tokens": 3712,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 109,
+          "reasoning_output_tokens": 75
+        }
+      ],
+      "cost": null,
+      "prompt_file": "prompt.txt",
+      "final": {
+        "controls": 6651,
+        "fetches": 5627,
+        "lru_controls": 6651,
+        "lru_fetches": 7384,
+        "passed": false,
+        "traces": 32
+      }
+    },
+    {
+      "run": "03-plain",
+      "development": {
+        "controls": 1673,
+        "fetches": 1426,
+        "lru_controls": 1673,
+        "lru_fetches": 1937,
+        "passed": true,
+        "traces": 8
+      },
+      "model": "gpt-6.1-sol",
+      "backend": "Codex CLI",
+      "effort": "low",
+      "seconds": 14.23,
+      "status": "ok",
+      "usage": [
+        {
+          "input_tokens": 13706,
+          "cached_input_tokens": 3712,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 250,
+          "reasoning_output_tokens": 222
+        }
+      ],
+      "cost": null,
+      "prompt_file": "prompt.txt",
+      "final": {
+        "controls": 6651,
+        "fetches": 5627,
+        "lru_controls": 6651,
+        "lru_fetches": 7384,
+        "passed": false,
+        "traces": 32
+      }
+    }
+  ]
+}
