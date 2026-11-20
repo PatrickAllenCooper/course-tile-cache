@@ -1,0 +1,1 @@
+This teaching application extends cachetools 5.5.2. Unmodified upstream runtime sources and their original license are in vendor/. The distribution URL and SHA-256 are in vendor/upstream.json. The starting policy is a course integration, not a reported upstream defect.
